@@ -1,1 +1,42 @@
-<p>header works!</p>
+<mat-toolbar class="sidenav-container mat-elevation-z6" color="success">
+  <ng-container>
+
+  <span> Title</span>
+  <a mat-button routerLink="/" class="example-icon mr-5" aria-label="Example icon-button with share icon">
+    home
+  </a>
+  <mat-menu #category="matMenu">
+    <a mat-menu-item routerLink="/">link</a>
+  </mat-menu>
+  <mat-menu #management="matMenu">
+    <a mat-menu-item routerLink="app-info">  info</a>
+  </mat-menu>
+  <span class="example-spacer"></span>
+
+
+
+    <mat-icon class="example-icon" aria-hidden="false" aria-label="icon">user</mat-icon>
+
+  </ng-container>
+
+</mat-toolbar>
+
+
+<mat-toolbar-row class="green-bg">
+
+  <ng-container>
+    <span>Second Line</span>
+    <span class="example-spacer"></span>
+    <mat-icon class="example-icon" aria-hidden="false" aria-label="Example user verified icon">verified_user</mat-icon>
+
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>login</mat-icon>
+    </button>
+
+
+  </ng-container>
+
+
+
+</mat-toolbar-row>
+
