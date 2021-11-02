@@ -12,11 +12,10 @@ import {ActionTypes, AddToCart, GetItems, RemoveFromCart} from "../store/actions
 })
 export class CourseComponent implements OnInit {
 
-  courses!: Observable<Course[]>;
-  test:any = 10;
+  courses!: Course[];
 
-  constructor(private store: Store<AppCourseState>) {
-    this.courses = this.store.select(state => state.courses);
+  constructor(private store: Store<{ courses: { courses:Course[] }; cart: [] }>) {
+    store.pipe(select('courses')).subscribe(data => (this.courses = data.courses));
   }
 
 

@@ -14,20 +14,16 @@ import {Observable} from "rxjs";
 export class CourseService {
 
 
-  constructor(private http: HttpClient) {}
 
-  // private url: URLMaker;
-  //
-  // constructor(private crudService: GenericCrudService) {
-  //   this.url = new URLMakerImpl('/courses');
-  // }
-  //
-  //
-  // getAll(): Observable<Course[]> {
-  //   return this.crudService.getAll(this.url.get());
-  // }
+  private url: URLMaker;
 
-  getAll() {
-    return this.http.get('http://localhost:3000/courses');
+  constructor(private crudService: GenericCrudService) {
+    this.url = new URLMakerImpl('/courses');
   }
+
+
+  getAll(): Observable<Course[]> {
+    return this.crudService.getAll(this.url.get());
+  }
+
 }
