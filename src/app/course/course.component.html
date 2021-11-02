@@ -1,0 +1,8 @@
+<p>course works!  {{test}}</p>
+
+
+<ul>
+  <li *ngFor="let course of courses | async" >
+    Title: {{course.title}}, Price: {{course.price}}
+  </li>
+</ul>
