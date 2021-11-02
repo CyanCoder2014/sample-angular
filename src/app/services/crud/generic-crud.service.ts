@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
 import {GenericHttpService} from "../http/generic-http.service";
-import {HttpParams} from "@angular/common/http";
+import {HttpClient, HttpParams} from "@angular/common/http";
 import {GetResponse} from "../response/get-response";
+import {Observable} from "rxjs";
 
 @Injectable({
   providedIn: 'root'
 })
 export class GenericCrudService {
-
 
 
   constructor(private http: GenericHttpService) {
@@ -19,5 +19,8 @@ export class GenericCrudService {
       error => response.onGetError(error));
   }
 
+  getAll(url:string):Observable<any> {
+    return this.http.getAll(url);
+  }
 
 }

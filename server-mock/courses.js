@@ -1,6 +1,7 @@
 
 module.exports = [
   {
+    "id": 2,
     "title": "Test Title",
     "description": "The best course",
     "duration": "30 min",
