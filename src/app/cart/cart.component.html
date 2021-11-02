@@ -1,0 +1,3 @@
+<p>cart works!</p>
+<div  (click)="removeFromCart(cartItem)"
+      *ngIf="addedToCart" class="badge badge-danger"> Title: {{cartItem.title}}, Price: {{cartItem.price}}</div>

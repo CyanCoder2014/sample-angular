@@ -3,6 +3,18 @@
 
 <ul>
   <li *ngFor="let course of courses" >
-    Title: {{course.title}}, Price: {{course.price}}
+    <app-item [course]="course"></app-item>
+
+  </li>
+
+
+</ul>
+
+
+
+
+<ul>
+  <li *ngFor="let cartItem of cards" >
+    <app-cart [cartItem]="cartItem"></app-cart>
   </li>
 </ul>

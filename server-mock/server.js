@@ -9,6 +9,14 @@ const bodyParser = require('body-parser');
 const app = express();
 const course = require('./courses');
 
+
+
+app.listen(port, () => {
+  console.log(`Example app listening at http://localhost:${port}`)
+})
+
+
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use((req, res, next) => {

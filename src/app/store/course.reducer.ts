@@ -17,13 +17,13 @@ export function courseReducer(state: AppCourseState = {courses:[], card:[]}, act
     case ActionTypes.Add:
       return {
         ...state,
-        card: [...state.card, action.payload]
+        card: [...state.card.filter(item => item.id !== action.payload.id), action.payload]
       };
 
     case ActionTypes.Remove:
       return {
         ...state,
-        card: [...state.card.filter(item => item.item !== action.payload.item)]
+        card: [...state.card.filter(item => item.id !== action.payload.id)]
       };
 
 

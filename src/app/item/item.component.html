@@ -1,0 +1,6 @@
+<p>item works!</p>
+<!--<app-list [courses]="courses"></app-list>-->
+<div (click)="addToCart(course)"
+     *ngIf="true"  class="badge badge-dark">
+  Title: {{course.title}}, Price: {{course.price}}
+</div>

@@ -4,6 +4,7 @@ import {Course} from "../models/course.model";
 import {select,Store} from "@ngrx/store";
 import {AppCourseState} from "../app.state";
 import {ActionTypes, AddToCart, GetItems, RemoveFromCart} from "../store/actions";
+import {Card} from "../models/card.model";
 
 @Component({
   selector: 'app-course',
@@ -13,9 +14,11 @@ import {ActionTypes, AddToCart, GetItems, RemoveFromCart} from "../store/actions
 export class CourseComponent implements OnInit {
 
   courses!: Course[];
+  cards!: Card[];
 
-  constructor(private store: Store<{ courses: { courses:Course[] }; cart: [] }>) {
+  constructor(private store: Store<{ courses: AppCourseState}>) {
     store.pipe(select('courses')).subscribe(data => (this.courses = data.courses));
+    store.pipe(select('courses')).subscribe(data => (this.cards = data.card));
   }
 
 
@@ -23,20 +26,6 @@ export class CourseComponent implements OnInit {
   ngOnInit() {
     this.store.dispatch(new GetItems());
   }
-
-
-
-  addToCart(item: Course) {
-    this.store.dispatch(new AddToCart(item));
-  }
-
-  removeFromCart(item: Course) {
-    this.store.dispatch(new RemoveFromCart(item));
-  }
-
-
-
-
 
 
 }

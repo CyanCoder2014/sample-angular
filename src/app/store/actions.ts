@@ -3,8 +3,8 @@ import { Action } from '@ngrx/store';
 import {Course} from "../models/course.model";
 
 export enum ActionTypes {
-  Add = '[Course] Add to cart',
-  Remove = '[Course] Remove from cart',
+  Add = '[Course] Add to card',
+  Remove = '[Course] Remove from card',
   LoadItems = '[Courses] Load items from server',
   LoadSuccess = '[Courses] Load success'
 }
