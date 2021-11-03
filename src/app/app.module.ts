@@ -21,6 +21,10 @@ import {HttpClientModule} from "@angular/common/http";
 import { ItemComponent } from './item/item.component';
 import { CartComponent } from './cart/cart.component';
 
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
+
 
 @NgModule({
   declarations: [
@@ -31,7 +35,7 @@ import { CartComponent } from './cart/cart.component';
     HomeComponent,
     CourseComponent,
     ItemComponent,
-    CartComponent
+    CartComponent,
   ],
   imports: [
     BrowserModule,
@@ -45,7 +49,11 @@ import { CartComponent } from './cart/cart.component';
     StoreModule.forRoot({ courses: courseReducer }),
     EffectsModule.forRoot([CourseEffects]),
 
-    HttpClientModule
+    HttpClientModule,
+    FontAwesomeModule,
+    NgbModule,
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]
