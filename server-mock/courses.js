@@ -2,67 +2,67 @@
 module.exports = [
   {
     "id": 1,
-    "title": "Test Title",
+    "title": "Test Title 1",
     "description": "The best course",
-    "duration": "30 min",
-    "price": 230,
-    "score": 4,
+    "duration": "50 min",
+    "price": 20,
+    "score": 2,
     "teacher": {
-      "name": "test",
+      "name": "Jon",
       "image": "/",
     }
   },
   {
     "id": 2,
-    "title": "Test Title",
+    "title": "Test 2 Title",
     "description": "The best course",
-    "duration": "30 min",
-    "price": 230,
-    "score": 4,
+    "duration": "50 min",
+    "price": 140,
+    "score": 5,
     "teacher": {
-      "name": "test",
+      "name": "Sara",
       "image": "/",
     }
   },
   {
     "id": 3,
-    "title": "Test Title",
+    "title": "Test Title 4",
     "description": "The best course",
     "duration": "30 min",
-    "price": 230,
-    "score": 4,
+    "price": 210,
+    "score": 3,
     "teacher": {
-      "name": "test",
+      "name": "James",
       "image": "/",
     }
   },
   {
     "id": 4,
-    "title": "Test Title",
+    "title": "Test 4 Title",
     "description": "The best course",
     "duration": "30 min",
     "price": 230,
-    "score": 4,
+    "score": 5,
     "teacher": {
-      "name": "test",
+      "name": "Name",
       "image": "/",
     }
   },
   {
     "id": 5,
-    "title": "Test Title",
+    "title": "Test Title 5",
     "description": "The best course",
     "duration": "30 min",
-    "price": 230,
+    "price": 190,
     "score": 4,
     "teacher": {
-      "name": "test",
+      "name": "Jon",
       "image": "/",
     }
   },
   {
     "id": 6,
-    "title": "Test Title",
+    "title": "Test 6 Title",
     "description": "The best course",
     "duration": "30 min",
     "price": 230,

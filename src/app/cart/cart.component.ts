@@ -4,6 +4,7 @@ import {RemoveFromCart} from "../store/actions";
 import {Store} from "@ngrx/store";
 import {AppCourseState} from "../app.state";
 import {Card} from "../models/card.model";
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-cart',
@@ -11,6 +12,9 @@ import {Card} from "../models/card.model";
   styleUrls: ['./cart.component.css']
 })
 export class CartComponent implements OnInit {
+
+
+  faTimes = faTimes;
 
   constructor(private store: Store<AppCourseState>) {}
 

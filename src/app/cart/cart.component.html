@@ -1,3 +1,6 @@
-<p>cart works!</p>
 <div  (click)="removeFromCart(cartItem)"
-      *ngIf="addedToCart" class="badge badge-danger"> Title: {{cartItem.title}}, Price: {{cartItem.price}}</div>
+      *ngIf="addedToCart" class="badge badge-danger m-1"> Title: {{cartItem.title}}, Price: {{cartItem.price}}
+
+  <fa-icon [icon]="faTimes" class="ml-2"></fa-icon>
+
+</div>
