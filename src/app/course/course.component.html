@@ -1,0 +1,20 @@
+
+
+<div class="container">
+
+  <div *ngIf="cards.length >0" class="row green-bg rounded p-5 m-2 mb-4">
+    <h6 class="mt-1">Selected Course:</h6>
+    <div *ngFor="let cartItem of cards">
+      <app-cart [cartItem]="cartItem"></app-cart>
+    </div>
+  </div>
+
+  <div class="row align-items-center">
+    <div class="col-4" *ngFor="let course of courses">
+      <app-item [course]="course"></app-item>
+    </div>
+  </div>
+</div>
+
+
+
