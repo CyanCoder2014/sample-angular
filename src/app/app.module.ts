@@ -23,6 +23,7 @@ import { CartComponent } from './cart/cart.component';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AuthComponent } from './auth/auth.component';
 
 
 
@@ -36,6 +37,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     CourseComponent,
     ItemComponent,
     CartComponent,
+    AuthComponent,
   ],
   imports: [
     BrowserModule,
