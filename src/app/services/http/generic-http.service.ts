@@ -10,6 +10,10 @@ export class GenericHttpService {
   constructor(private http: HttpClient) {
   }
 
+  getAll(url: string): Observable<any> {
+    return this.http.get<any>(url);
+  }
+
   get(url: string, params: HttpParams): Observable<any> {
     const options: object = {params, observe: 'response'};
     return this.http.get<any>(url, options);
